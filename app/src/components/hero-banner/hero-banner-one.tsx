@@ -118,7 +118,7 @@ const HeroBannerOne = () => {
                 <div className="tp-hero-content tp_fade_bottom" style={{ marginTop: '30px', maxWidth: '800px' }}>
                   <p style={{ color: 'rgba(255,255,255,0.9)', fontSize: '18px', lineHeight: '1.6' }}>
                     <span></span>
-                    We're a full-service marketing agency helping brands grow through strategic campaigns, creative content, and data-driven insights. Partner with us to elevate your brand and reach your marketing goals.
+                    We&apos;re a full-service marketing agency helping brands grow through strategic campaigns, creative content, and data-driven insights. Partner with us to elevate your brand and reach your marketing goals.
                   </p>
                 </div>
               </div>
