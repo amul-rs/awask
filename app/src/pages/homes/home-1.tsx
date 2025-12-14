@@ -159,7 +159,7 @@ const HomeMain = () => {
 
       {/* footer shape */}
       <div className="tp-footer-shape-wrap z-index-5 smooth">
-        <Link href="/contact">
+        <Link href="https://wa.me/18704401519?text=Hello!%20I%20have%20a%20question%20about%20your%20services." target="_blank">
             <div className="tp-footer-shape p-relative">
                 <Image className="img-1" src={shape_1} alt="shape"/>
                 <Image className="img-2" src={shape_2} alt="shape"/>
