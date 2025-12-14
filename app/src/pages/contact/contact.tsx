@@ -47,7 +47,7 @@ const ContactMain = () => {
                   <div className="row">
                     <div className="col-xl-12">
                       <div className="tm-hero-content">
-                        <span className="tm-hero-subtitle">awask Studio</span>
+                        <span className="tm-hero-subtitle">Awask Studio</span>
                         <h4 className="tm-hero-title-big tp-char-animation">
                           Get in touch
                         </h4>

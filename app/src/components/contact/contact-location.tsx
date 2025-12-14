@@ -10,32 +10,22 @@ const location_data = [
   {
     id: 1,
     img: location_1,
-    country: "France",
-    time: "12:00 pm GMT+2",
-    location_title: "Base Create",
-    address: "Base Creative, 43 Appleton <br /> Lane, 3287 Hamilton",
-    phone: "(+91) 76001726",
-    email: "Hello@contact.com",
+    country: "United States",
+    time: "9:00 am - 5:00 pm EST",
+    location_title: "Awask Studio",
+    address: "Awask Studio, <br /> New York, NY",
+    phone: "+1 (870) 440-1519",
+    email: "contact@awask.com",
   },
   {
     id: 2,
     img: location_2,
-    country: "Germany",
-    time: "11:00 pm GMT+2",
-    location_title: "Base Create",
-    address: "Base Creative, 43 Appleton <br /> Lane, 3287 Hamilton",
-    phone: "(+91) 76001726",
-    email: "Hello@contact.com",
-  },
-  {
-    id: 3,
-    img: location_3,
-    country: "New Zealand",
-    time: "10:00 pm GMT+2",
-    location_title: "Base Create",
-    address: "Base Creative, 43 Appleton <br /> Lane, 3287 Hamilton",
-    phone: "(+91) 76001726",
-    email: "Hello@contact.com",
+    country: "India",
+    time: "9:00 am - 6:00 pm IST",
+    location_title: "Awask Studio",
+    address: "C2 Jeswanth Nagar Phase 2, <br /> Chennai, Migappir West, 600037",
+    phone: "+91 7667602027",
+    email: "contact@awask.com",
   },
 ];
 
@@ -74,13 +64,13 @@ const ContactLocation = () => {
                           dangerouslySetInnerHTML={{ __html: item.address }}
                         ></a>
                       </div>
-                      <div className="cn-contact-map">
+                      {/* <div className="cn-contact-map">
                         <a href="#">Google Maps</a>
-                      </div>
+                      </div> */}
                     </div>
                     <div className="cn-contact-right-info text-start text-md-end">
-                      <a href="tel:(+91)76001726">{item.phone}</a> <br />
-                      <a href="mailto:Hello@contact.com">{item.email}</a>
+                      <a href={`tel:${item.phone.replace(/\s/g, '')}`}>{item.phone}</a> <br />
+                      <a href={`mailto:${item.email}`}>{item.email}</a>
                     </div>
                   </div>
                 </div>
