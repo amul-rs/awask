@@ -31,7 +31,7 @@ const HeroBannerOne = () => {
               }}
             >
               {/* Ballpit Animation */}
-              <div style={{
+              {/* <div style={{
                 position: 'absolute',
                 top: 0,
                 left: 0,
@@ -47,10 +47,10 @@ const HeroBannerOne = () => {
                   wallBounce={0.55}
                   followCursor={false}
                 />
-              </div>
+              </div> */}
 
               {/* Overlay Gradient for better text readability */}
-              <div style={{
+              {/* <div style={{
                 position: 'absolute',
                 top: 0,
                 left: 0,
@@ -59,7 +59,7 @@ const HeroBannerOne = () => {
                 background: 'linear-gradient(to bottom, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.1) 50%, rgba(0,0,0,0.3) 100%)',
                 zIndex: 2,
                 pointerEvents: 'none'
-              }} />
+              }} /> */}
 
               {/* Text Content Overlay */}
               <div style={{
@@ -89,18 +89,18 @@ const HeroBannerOne = () => {
                         <span className="tp-hero-subtitle d-none d-lg-block" style={{ color: 'rgba(255,255,255,0.8)' }}>
                           Welcome to <br /> Awask
                         </span>
-                        {/* <span className="tp-hero-shape-2 d-none d-md-block">
+                         <span className="tp-hero-shape-2 d-none d-md-block">
                           <Image
                             src="/assets/img/home-01/hero/hero-shape-1-1.png"
                             alt="shape"
                             width={40}
                             height={40}
                           />
-                        </span> */}
+                        </span> 
                       </span>
                       <br />
                       Marketing 
-                      {/* <span className="tp-hero-title-img">
+                       <span className="tp-hero-title-img">
                         <Image
                           className="tp-zoom-img"
                           src="/assets/img/home-01/hero/hero-1-1.png"
@@ -109,7 +109,7 @@ const HeroBannerOne = () => {
                           height={160}
                           style={{ height: "auto" }}
                         />
-                      </span> */}
+                      </span> 
                         Agency
                     </h1>
                   </div>
