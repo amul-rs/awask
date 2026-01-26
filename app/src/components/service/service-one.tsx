@@ -83,8 +83,8 @@ const ServiceOne = () => {
                   key={s.id}
                   className="tp-service-item d-flex align-items-start mb-75 tp_fade_bottom"
                 >
-                  <div className="tp-service-icon">
-                    <Image src={s.icon} alt="icon" width={60} height={60} style={{ height: "auto", width: "60px" }} />
+                  <div className="tp-service-icon" style={{ background: 'transparent' }}>
+                    <Image src={s.icon} alt="icon" width={60} height={60} style={{ height: "auto", width: "60px", backgroundColor: 'transparent' }} />
                   </div>
                   <div className="tp-service-content">
                     <h4 className="tp-service-title-sm order-0">
