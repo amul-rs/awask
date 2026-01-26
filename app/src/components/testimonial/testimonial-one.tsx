@@ -6,23 +6,29 @@ import { Navigation } from "swiper/modules";
 import { SwiperOptions } from "swiper/types";
 
 const testimonial_data = [
+  // {
+  //   id: 1,
+  //   desc: `"Awask transformed our digital presence completely. Their strategic approach to SEO and content marketing increased our organic traffic by 300% in just 6 months. The team's expertise and dedication to our success is unmatched."`,
+  //   name: "Sarah Johnson",
+  //   designation: "CEO, TechStart Inc.",
+  // },
+  // {
+  //   id: 2,
+  //   desc: `"Working with Awask has been a game-changer for our brand. Their social media campaigns generated incredible engagement and helped us reach new audiences we never thought possible. Their data-driven approach delivers real results."`,
+  //   name: "Michael Chen",
+  //   designation: "Marketing Director, BrandCo",
+  // },
+  // {
+  //   id: 3,
+  //   desc: `"The team at Awask understands marketing like no other agency. They don't just create campaigns, they build strategies that drive growth. Our ROI has increased significantly since partnering with them."`,
+  //   name: "Emily Rodriguez",
+  //   designation: "Founder, Growth Labs",
+  // },
   {
-    id: 1,
-    desc: `"Awask transformed our digital presence completely. Their strategic approach to SEO and content marketing increased our organic traffic by 300% in just 6 months. The team's expertise and dedication to our success is unmatched."`,
-    name: "Sarah Johnson",
-    designation: "CEO, TechStart Inc.",
-  },
-  {
-    id: 2,
-    desc: `"Working with Awask has been a game-changer for our brand. Their social media campaigns generated incredible engagement and helped us reach new audiences we never thought possible. Their data-driven approach delivers real results."`,
-    name: "Michael Chen",
-    designation: "Marketing Director, BrandCo",
-  },
-  {
-    id: 3,
-    desc: `"The team at Awask understands marketing like no other agency. They don't just create campaigns, they build strategies that drive growth. Our ROI has increased significantly since partnering with them."`,
-    name: "Emily Rodriguez",
-    designation: "Founder, Growth Labs",
+    id: 4,
+    desc: `"We are completely satisfied with the website development services provided by Awask. They delivered a high-quality, responsive site that perfectly captures our brand essence. The process was seamless and the results exceeded our expectations."`,
+    name: "Serles Bake",
+    designation: "Website Development",
   },
 ];
 

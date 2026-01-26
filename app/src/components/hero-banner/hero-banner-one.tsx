@@ -7,11 +7,11 @@ import Ballpit from "@/components/reactbits/ballpits";
 
 const HeroBannerOne = () => {
   useGSAP(() => {
-  
-    if(typeof window !== 'undefined'){
+
+    if (typeof window !== 'undefined') {
       setTimeout(() => {
         fadeAnimation();
-      },100)
+      }, 100)
     }
   }, {});
   return (
@@ -20,11 +20,11 @@ const HeroBannerOne = () => {
         <div className="row">
           <div className="col-xl-12">
             {/* Ballpit Background Section */}
-            <div 
+            <div
               style={{
-                position: 'relative', 
-                overflow: 'hidden', 
-                minHeight: '600px', 
+                position: 'relative',
+                overflow: 'hidden',
+                minHeight: '600px',
                 width: '100%',
                 background: 'linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%)',
                 borderRadius: '12px'
@@ -89,18 +89,18 @@ const HeroBannerOne = () => {
                         <span className="tp-hero-subtitle d-none d-lg-block" style={{ color: 'rgba(255,255,255,0.8)' }}>
                           Welcome to <br /> Awask
                         </span>
-                         <span className="tp-hero-shape-2 d-none d-md-block">
+                        <span className="tp-hero-shape-2 d-none d-md-block">
                           <Image
                             src="/assets/img/home-01/hero/hero-shape-1-1.png"
                             alt="shape"
                             width={40}
                             height={40}
                           />
-                        </span> 
+                        </span>
                       </span>
                       <br />
-                      Marketing 
-                       <span className="tp-hero-title-img">
+                      Marketing
+                      <span className="tp-hero-title-img">
                         <Image
                           className="tp-zoom-img"
                           src="/assets/img/home-01/hero/hero-1-1.png"
@@ -109,12 +109,12 @@ const HeroBannerOne = () => {
                           height={160}
                           style={{ height: "auto" }}
                         />
-                      </span> 
-                        Agency
+                      </span>
+                      Agency
                     </h1>
                   </div>
                 </div>
-                
+
                 <div className="tp-hero-content tp_fade_bottom" style={{ marginTop: '30px', maxWidth: '800px' }}>
                   <p style={{ color: 'rgba(255,255,255,0.9)', fontSize: '18px', lineHeight: '1.6' }}>
                     <span></span>

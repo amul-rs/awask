@@ -1,12 +1,10 @@
 import { IBlogDT } from "@/types/blog-d-t";
-
-// blog images
-
-// home 5
-import blog_1 from "@/assets/img/home-05/blog/blog-1.jpg";
-import blog_2 from "@/assets/img/home-05/blog/blog-2.jpg";
-import blog_3 from "@/assets/img/home-05/blog/blog-3.jpg";
-import blog_4 from "@/assets/img/home-05/blog/blog-4.jpg";
+// custom blog images
+import blog_speed from "@/assets/img/blog/custom/speed.png";
+import blog_launch from "@/assets/img/blog/custom/launch.png";
+import blog_integrations from "@/assets/img/blog/custom/integrations.png";
+import blog_nextjs from "@/assets/img/blog/custom/nextjs.png";
+import author_img from "@/assets/img/blog/custom/author.webp";
 // blog modern 
 import b_m_1 from "@/assets/img/inner-blog/blog-standard/blog-1.jpg";
 import b_m_2 from "@/assets/img/inner-blog/blog-standard/blog-2.jpg";
@@ -37,35 +35,120 @@ import blog_list_5 from '@/assets/img/inner-blog/blog-right-sidebar/blog-5.jpg';
 export const blog_home_five: IBlogDT[] = [
   {
     id: 1,
-    img: blog_1,
-    title: "10 Digital Marketing Trends to Watch in 2024",
-    date: '15. JAN. 2024',
-    category: 'Marketing / Strategy',
-    author: 'Sarah Johnson',
+    img: blog_speed,
+    title: "How to Make Your Website Faster (Google PageSpeed–Focused Guide)",
+    date: '14. DEC. 2025',
+    category: 'Performance',
+    author: 'Amulraj S',
+    authorImg: author_img,
+    designation: 'Digital Marketing Expert',
+    slug: 'make-your-website-faster',
+    content: [
+      { type: 'paragraph', text: 'Website speed is no longer optional. A slow website affects user experience, SEO rankings, and conversions. Google’s PageSpeed Insights is one of the most reliable tools to measure and improve performance.' },
+      { type: 'paragraph', text: 'Here’s a practical guide to making your website faster using PageSpeed Insights and proven optimization techniques.' },
+      { type: 'heading', text: 'Step 1: Test Your Website with Google PageSpeed Insights' },
+      { type: 'paragraph', text: 'Start by testing your website on Google PageSpeed Insights. Focus on: Performance score (mobile first), Core Web Vitals, Opportunities & diagnostics. Mobile performance matters more than desktop.' },
+      { type: 'heading', text: 'Step 2: Optimize Core Web Vitals' },
+      { type: 'heading', text: 'Largest Contentful Paint (LCP)' },
+      { type: 'list', items: ['Use optimized images (WebP)', 'Reduce server response time', 'Use a fast hosting provider'] },
+      { type: 'heading', text: 'First Input Delay (FID)' },
+      { type: 'list', items: ['Reduce heavy JavaScript', 'Defer unused scripts', 'Use modern JS frameworks efficiently'] },
+      { type: 'heading', text: 'Cumulative Layout Shift (CLS)' },
+      { type: 'list', items: ['Define image and video dimensions', 'Avoid dynamic content shifts', 'Load fonts properly'] },
+      { type: 'heading', text: 'Step 3: Image Optimization (Biggest Speed Win)' },
+      { type: 'list', items: ['Compress images without quality loss', 'Use modern formats (WebP / AVIF)', 'Lazy-load below-the-fold images', 'Serve responsive images'] },
+      { type: 'heading', text: 'Step 4: Improve Code & Assets' },
+      { type: 'list', items: ['Minify CSS, JS, and HTML', 'Remove unused CSS and scripts', 'Enable GZIP or Brotli compression', 'Combine files where possible'] },
+      { type: 'heading', text: 'Step 5: Use Caching & CDN' },
+      { type: 'list', items: ['Enable browser caching', 'Use server-side caching', 'Use a CDN for static assets', 'Reduce repeat network requests'] },
+      { type: 'heading', text: 'Final Tip' },
+      { type: 'paragraph', text: 'Speed optimization is ongoing, not one-time. Re-test your site after every major update. A fast website improves rankings, engagement, and trust.' },
+    ]
   },
   {
     id: 2,
-    img: blog_2,
-    title: "How to Build a Content Marketing Strategy That Converts",
-    date: '22. FEB. 2024',
-    category: 'Content Marketing',
-    author: 'Michael Chen',
+    img: blog_launch,
+    title: "Website Launch Checklist: Don’t Go Live Without This",
+    date: '28. DEC. 2025',
+    category: 'Web Dev',
+    author: 'Amulraj S',
+    authorImg: author_img,
+    designation: 'Digital Marketing Expert',
+    slug: 'website-launch-checklist',
+    content: [
+      { type: 'paragraph', text: 'Launching a website without proper checks can lead to broken pages, SEO issues, and lost leads. This checklist helps ensure your website is ready for real users.' },
+      { type: 'heading', text: 'Technical Checklist' },
+      { type: 'list', items: ['Mobile responsiveness tested', 'Cross-browser testing completed', 'Page speed optimized', 'SSL certificate installed (HTTPS)', 'All links working (no 404s)'] },
+      { type: 'heading', text: 'SEO Checklist' },
+      { type: 'list', items: ['Title tags and meta descriptions added', 'Proper heading structure (H1–H6)', 'Image alt texts added', 'Sitemap generated and submitted', 'Robots.txt configured correctly'] },
+      { type: 'heading', text: 'Content Checklist' },
+      { type: 'list', items: ['Spelling and grammar checked', 'Clear CTAs on key pages', 'Contact details verified', 'Privacy Policy & Terms added'] },
+      { type: 'heading', text: 'Tracking & Analytics' },
+      { type: 'list', items: ['Google Analytics installed', 'Google Search Console set up', 'Conversion tracking configured', 'Form submissions tested'] },
+      { type: 'heading', text: 'Security & Backup' },
+      { type: 'list', items: ['Strong admin passwords', 'Backup system enabled', 'Security plugins / firewall set up', 'Spam protection added'] },
+      { type: 'heading', text: 'Final Step' },
+      { type: 'paragraph', text: 'Do a full test as a real user before launch. A smooth launch sets the foundation for growth.' },
+    ]
   },
   {
     id: 3,
-    img: blog_3,
-    title: "SEO Best Practices for Maximum Organic Growth",
-    date: '08. MAR. 2024',
-    category: 'SEO / Analytics',
-    author: 'Emily Rodriguez',
+    img: blog_integrations,
+    title: "Must-Have Free Integrations for Every Website",
+    date: '05. JAN. 2026',
+    category: 'Tools',
+    author: 'Amulraj S',
+    authorImg: author_img,
+    designation: 'Digital Marketing Expert',
+    slug: 'must-have-free-integrations',
+    content: [
+      { type: 'paragraph', text: 'A modern website is more than just design. The right integrations help track performance, improve SEO, and generate leads—without extra cost. Here are essential free tools every website should have.' },
+      { type: 'heading', text: 'Google Analytics' },
+      { type: 'paragraph', text: 'Tracks: Visitors and traffic sources, User behavior, Conversions and goals. Essential for understanding what’s working.' },
+      { type: 'heading', text: 'Google Search Console' },
+      { type: 'paragraph', text: 'Helps you: Monitor search performance, Fix indexing issues, Track keywords and impressions. Critical for SEO visibility.' },
+      { type: 'heading', text: 'Google PageSpeed Insights' },
+      { type: 'paragraph', text: 'Measures performance, Identifies speed issues, Tracks Core Web Vitals. Use it regularly.' },
+      { type: 'heading', text: 'Google Tag Manager' },
+      { type: 'paragraph', text: 'Manage tracking scripts easily, Add pixels without code changes, Keeps site lightweight.' },
+      { type: 'heading', text: 'reCAPTCHA' },
+      { type: 'paragraph', text: 'Prevents spam submissions, Protects contact forms, Improves site security.' },
+      { type: 'heading', text: 'Email & Form Integration' },
+      { type: 'paragraph', text: 'Connect forms to email, Auto-notify admins, Store leads securely.' },
+      { type: 'heading', text: 'Bonus Tools' },
+      { type: 'list', items: ['Bing Webmaster Tools', 'Cloudflare (free CDN & security)', 'Hotjar (basic heatmaps – free tier)'] },
+      { type: 'heading', text: 'Final Thought' },
+      { type: 'paragraph', text: 'These integrations create a strong foundation without increasing costs.' },
+    ]
   },
   {
     id: 4,
-    img: blog_4,
-    title: "Social Media Marketing: Engaging Your Audience in 2024",
-    date: '14. APR. 2024',
-    category: 'Social Media',
-    author: 'David Thompson',
+    img: blog_nextjs,
+    title: "Why Next.js Is the Best Choice for Modern Web Apps",
+    date: '19. JAN. 2026',
+    category: 'Framework',
+    author: 'Amulraj S',
+    authorImg: author_img,
+    designation: 'Digital Marketing Expert',
+    slug: 'why-nextjs-is-best-choice',
+    content: [
+      { type: 'paragraph', text: 'Choosing the right framework impacts performance, SEO, and scalability. Among modern frameworks, Next.js stands out for building fast, production-ready web applications.' },
+      { type: 'heading', text: 'What Is Next.js?' },
+      { type: 'paragraph', text: 'Next.js is a React-based framework that supports multiple rendering methods: Server-Side Rendering (SSR), Static Site Generation (SSG), Incremental Static Regeneration (ISR). This flexibility makes it ideal for modern apps.' },
+      { type: 'heading', text: 'Why Next.js Is a Strong Choice' },
+      { type: 'heading', text: 'Performance' },
+      { type: 'list', items: ['Faster initial page loads', 'Optimized image handling', 'Automatic code splitting'] },
+      { type: 'heading', text: 'SEO-Friendly' },
+      { type: 'list', items: ['Server-rendered pages', 'Better indexing by search engines', 'Improved Core Web Vitals'] },
+      { type: 'heading', text: 'Scalability' },
+      { type: 'list', items: ['Suitable for small websites and large apps', 'API routes included', 'Easy integration with backend services'] },
+      { type: 'heading', text: 'Rendering Options Explained' },
+      { type: 'list', items: ['SSR: Dynamic content rendered on the server', 'SSG: Static pages generated at build time', 'ISR: Update pages without full rebuilds'] },
+      { type: 'heading', text: 'When to Use Next.js' },
+      { type: 'list', items: ['SEO-driven websites', 'SaaS applications', 'Dashboards and portals', 'High-performance marketing sites'] },
+      { type: 'heading', text: 'Final Verdict' },
+      { type: 'paragraph', text: 'Next.js offers the right balance of speed, SEO, and flexibility for modern web applications.' },
+    ]
   }
 ];
 

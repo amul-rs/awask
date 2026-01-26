@@ -16,4 +16,13 @@ export interface IBlogDT {
   blogQuoteTwo?: boolean;
   blogHeroSlider?: boolean;
   desc?: string;
+  authorImg?: StaticImageData;
+  designation?: string;
+  slug?: string;
+  content?: {
+    type: 'paragraph' | 'heading' | 'list' | 'quote';
+    text?: string;
+    items?: string[];
+    author?: string;
+  }[];
 }

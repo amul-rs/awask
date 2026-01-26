@@ -15,7 +15,8 @@ export default function ContactOne() {
               <span> about  it </span>
             </h4>
             <p className="tp_fade_bottom text-black">
-              Ready to take your marketing to the next level? Let&apos;s collaborate to create campaigns that drive results and accelerate your business growth.
+              Planning to build, improve, or automate your digital systems?
+              Let&apos;s collaborate and see how we can help you scale.
             </p>
             <div className="tp-cta-icon">
               <Image src={cta} alt="cta-img" />

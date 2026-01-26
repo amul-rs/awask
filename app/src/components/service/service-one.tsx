@@ -7,6 +7,8 @@ import s_1 from "@/assets/img/home-01/service/service-icon-1.png";
 import s_2 from "@/assets/img/home-01/service/service-icon-2.png";
 import s_3 from "@/assets/img/home-01/service/service-icon-3.png";
 import s_4 from "@/assets/img/home-01/service/service-icon-4.png";
+import s_5 from "@/assets/img/home-01/service/service-icon-5.png";
+import s_6 from "@/assets/img/home-01/service/service-icon-6.png";
 
 // service data
 const service_data = [
@@ -34,26 +36,39 @@ const service_data = [
     desc: "Build powerful, responsive websites and web applications that deliver exceptional user experiences. From design to deployment, we create digital solutions that drive engagement and conversions.",
     icon: s_4,
   },
+  {
+    id: 5,
+    title: "CRM & BUSINESS AUTOMATION",
+    desc: "Streamline operations with CRM setup, workflow automation, and system integrations tailored to your business processes.",
+    icon: s_5,
+  },
+  {
+    id: 6,
+    title: "AI & CUSTOM SOFTWARE",
+    desc: "Custom software, plugins, and AI-powered solutions designed to reduce manual work and improve efficiency.",
+    icon: s_6,
+  },
 ];
 
 const ServiceOne = () => {
   return (
-    <div className="tp-service-area pt-180 pb-80 tp-btn-trigger">
+    <div id="services-one" className="tp-service-area pt-180 pb-80 tp-btn-trigger">
       <div className="container container-1630">
         <div className="row">
           <div className="col-xl-6 col-lg-6">
             <div className="tp-service-title-box p-relative">
               <span className="tp-section-subtitle  tp_fade_bottom p-relative">
-                Our Services
+                Our
               </span>
               <h4 className="tp-section-title tp_fade_bottom">
-                Marketing
+                Digital
+
                 <br />
                 <span>Solutions</span>
               </h4>
             </div>
             <div className="tp-service-left-btn tp-btn-bounce">
-              <Link className="tp-btn-border" href="/service">
+              <Link className="tp-btn-border" href="#services-six">
                 <span className="tp-btn-border-wrap">
                   <span className="text-1">See All Services</span>
                   <span className="text-2">See All Services</span>
@@ -69,11 +84,11 @@ const ServiceOne = () => {
                   className="tp-service-item d-flex align-items-start mb-75 tp_fade_bottom"
                 >
                   <div className="tp-service-icon">
-                    <Image src={s.icon} alt="icon" style={{ height: "auto" }} />
+                    <Image src={s.icon} alt="icon" width={60} height={60} style={{ height: "auto", width: "60px" }} />
                   </div>
                   <div className="tp-service-content">
                     <h4 className="tp-service-title-sm order-0">
-                      <Link href="/service-details">{s.title}</Link>
+                      <Link href="#services-six">{s.title}</Link>
                     </h4>
                     <p className="order-1">{s.desc}</p>
                   </div>

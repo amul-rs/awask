@@ -1,37 +1,23 @@
 import React from "react";
 import Image from "next/image";
-import avatar from "@/assets/img/inner-blog/blog-sidebar/avatar/avata-2.jpg";
+import author_img from "@/assets/img/blog/custom/author.webp";
 import banner from "@/assets/img/inner-blog/blog-sidebar/banner/banner.jpg";
 import { Search } from "../svg";
-import { blog_classic } from "@/data/blog-data";
+import { blog_home_five } from "@/data/blog-data";
 import Link from "next/link";
 
 export default function BlogSidebar() {
-  const rc_posts = [...blog_classic.filter((b) => b.img)].slice(0, 3);
+  const rc_posts = [...blog_home_five].slice(0, 3);
   return (
     <div className="sidebar__wrapper">
       <div className="sidebar__widget mb-45">
         <div className="sidebar__author text-center">
           <div className="sidebar__author-thumb">
-            <Image src={avatar} alt="avatar" style={{ height: "auto" }} />
+            <Image src={author_img} alt="author" style={{ height: "auto", borderRadius: '50%' }} />
           </div>
           <div className="sidebar__author-content">
-            <h4 className="sidebar__author-title">Mark Hopkins</h4>
-            <p>Lorem ipsum dolor consectetur adipiscing elit.</p>
-          </div>
-        </div>
-      </div>
-      <div className="sidebar__widget mb-65">
-        <div className="sidebar__widget-content">
-          <div className="sidebar__search">
-            <form action="#">
-              <div className="sidebar__search-input-2">
-                <input type="text" placeholder="Search product" />
-                <button type="submit">
-                  <Search />
-                </button>
-              </div>
-            </form>
+            <h4 className="sidebar__author-title">Amulraj S</h4>
+            <p>Digital Marketing & Technology Expert</p>
           </div>
         </div>
       </div>
@@ -40,16 +26,16 @@ export default function BlogSidebar() {
         <div className="sidebar__widget-content">
           <ul>
             <li>
-              <Link href="/blog-modern">Branding</Link>
+              <Link href="/blog-modern">Performance</Link>
             </li>
             <li>
-              <Link href="/blog-modern">Lifestyle</Link>
+              <Link href="/blog-modern">Web Development</Link>
             </li>
             <li>
-              <Link href="/blog-modern">UI/UX Design</Link>
+              <Link href="/blog-modern">Automation & AI</Link>
             </li>
             <li>
-              <Link href="/blog-modern">Production</Link>
+              <Link href="/blog-modern">SEO Strategy</Link>
             </li>
           </ul>
         </div>
@@ -68,9 +54,9 @@ export default function BlogSidebar() {
                     <Image
                       src={item.img!}
                       alt="blog-img"
-                      width={100}
-                      height={100}
-                      style={{ objectFit: "cover" }}
+                      width={80}
+                      height={80}
+                      style={{ objectFit: "cover", borderRadius: '8px' }}
                     />
                   </Link>
                 </div>
@@ -79,7 +65,7 @@ export default function BlogSidebar() {
                     <span>{item.date}</span>
                   </div>
                   <h3 className="rc__post-title">
-                    <Link href={`/blog-details/${item.id}`}>{item.title}</Link>
+                    <Link href={`/blog-details/${item.slug}`}>{item.title}</Link>
                   </h3>
                 </div>
               </div>
@@ -91,34 +77,11 @@ export default function BlogSidebar() {
         <h3 className="sidebar__widget-title">Tags</h3>
         <div className="sidebar__widget-content">
           <div className="tagcloud">
-            <a href="#">Creative</a>
-            <a href="#">Vision</a>
-            <a href="#">Popular</a>
-            <a href="#">Photography</a>
-            <a href="#">Lifestyle</a>
-          </div>
-        </div>
-      </div>
-      <div className="sidebar__widget mb-65">
-        <div className="sidebar__widget-content">
-          <div className="sidebar__banner-img">
-            <Image src={banner} alt="banner" style={{ height: "auto" }} />
-          </div>
-        </div>
-      </div>
-      <div className="sidebar__widget mb-65">
-        <h3 className="sidebar__widget-title">Follow Us</h3>
-        <div className="sidebar__widget-content">
-          <div className="sidebar__social">
-            <a href="#">
-              <i className="fa-brands fa-facebook"></i>
-            </a>
-            <a href="#">
-              <i className="fa-brands fa-twitter"></i>
-            </a>
-            <a href="#">
-              <i className="fa-brands fa-linkedin-in"></i>
-            </a>
+            <a href="#">SEO</a>
+            <a href="#">Next.js</a>
+            <a href="#">Performance</a>
+            <a href="#">Optimization</a>
+            <a href="#">Digital</a>
           </div>
         </div>
       </div>

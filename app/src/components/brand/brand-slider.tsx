@@ -3,18 +3,17 @@ import React from "react";
 import Image from "next/image";
 import Marquee from "react-fast-marquee";
 
-// brand images
-import b_1 from "@/assets/img/home-01/brand/brand-1.png";
-import b_2 from "@/assets/img/home-01/brand/brand-2.png";
-import b_3 from "@/assets/img/home-01/brand/brand-3.png";
-import b_4 from "@/assets/img/home-01/brand/brand-4.png";
-import b_5 from "@/assets/img/home-01/brand/brand-5.png";
-import b_6 from "@/assets/img/home-01/brand/brand-6.png";
-import b_7 from "@/assets/img/home-01/brand/brand-7.png";
-import b_8 from "@/assets/img/home-01/brand/brand-2.png";
+// new client logos
+import c_1 from "@/clients/drncc.png";
+import c_2 from "@/clients/millard.png";
+import c_3 from "@/clients/serlesbake.jpg";
+import c_4 from "@/clients/tapus_media.jpg";
+import c_5 from "@/clients/tkr.jpg";
+import c_6 from "@/clients/aarcm.png";
+import c_7 from "@/clients/creativezyme.jpg";
 
 
-const brand_images = [b_1, b_2, b_3, b_4, b_5, b_6, b_7, b_8,  b_1, b_2, b_3, b_4, b_5, b_6, b_7, b_8];
+const brand_images = [c_1, c_2, c_3, c_4, c_5, c_6, c_7, c_1, c_2, c_3, c_4, c_5, c_6, c_7];
 
 export default function BrandSlider() {
   return (
@@ -25,8 +24,8 @@ export default function BrandSlider() {
         className="brand-wrapper"
       >
         {brand_images.map((b, i) => (
-          <div key={i} className="tp-brand-item" style={{ height: "auto",width: "200px" }}>
-            <Image src={b} alt="" />
+          <div key={i} className="tp-brand-item" style={{ height: "100px", width: "250px", padding: "0 40px", display: "flex", alignItems: "center", justifyContent: "center" }}>
+            <Image src={b} alt="" style={{ maxHeight: "100%", width: "auto", objectFit: "contain" }} />
           </div>
         ))}
       </Marquee>
