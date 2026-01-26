@@ -6,15 +6,15 @@ import Link from "next/link";
 
 export default function ContactOne() {
   return (
-    <div className="tp-cta-area black-bg pt-120 pb-120 z-index fix">
+    <div className="tp-cta-area pt-120 pb-120 z-index fix ">
       <div className="container">
         <div className="col-xl-12">
           <div className="tp-cta-title-box p-relative">
             <h4 className="tp-cta-title cta-text">
-              Let&apos;s talk  
+              Let&apos;s talk
               <span> about  it </span>
             </h4>
-            <p className="tp_fade_bottom">
+            <p className="tp_fade_bottom text-black">
               Ready to take your marketing to the next level? Let&apos;s collaborate to create campaigns that drive results and accelerate your business growth.
             </p>
             <div className="tp-cta-icon">

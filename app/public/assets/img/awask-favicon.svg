@@ -1,0 +1,6 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Yellow Arrow (Offset Background) -->
+  <path d="M480 32L140 372L230 372L60 480L168 310L168 400L480 32Z" fill="#FFF200" transform="translate(-10, 10)" />
+  <!-- Purple Arrow (Foreground) -->
+  <path d="M480 32L140 372L230 372L60 480L168 310L168 400L480 32Z" fill="#7130B7" />
+</svg>

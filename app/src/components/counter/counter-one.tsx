@@ -13,8 +13,8 @@ import marque_7 from '@/assets/img/home-05/marque/marque-7.jpg';
 import marque_8 from '@/assets/img/home-05/marque/marque-8.jpg';
 import marque_9 from '@/assets/img/home-05/marque/marque-9.jpg';
 
-function MarqueImage({src}: {src: StaticImageData}) {
-  return <Image src={src} alt="marque-img" style={{height: 'auto'}} />
+function MarqueImage({ src }: { src: StaticImageData }) {
+  return <Image src={src} alt="marque-img" style={{ height: 'auto' }} />
 }
 export default function CounterOne() {
   return (
@@ -79,20 +79,20 @@ export default function CounterOne() {
               <div className="col-xl-4 col-lg-4 col-md-4 mb-30">
                 <div className="slide-funfact-item text-center">
                   <h4>
-                    <CounterItem min={0} max={350} />+
+                    <CounterItem min={0} max={50} />+
                   </h4>
-                  <span>Marketing Campaigns</span>
+                  <span>Websites Built</span>
                 </div>
               </div>
               <div className="col-xl-4 col-lg-4 col-md-4 mb-30">
                 <div className="slide-funfact-item text-center">
-                  <h4><CounterItem min={0} max={15} />+</h4>
-                  <span>Years of Experience</span>
+                  <h4><CounterItem min={0} max={10} />+</h4>
+                  <span>Years of Experienced Professionals</span>
                 </div>
               </div>
               <div className="col-xl-4 col-lg-4 col-md-4 mb-30">
                 <div className="slide-funfact-item text-center">
-                  <h4><CounterItem min={0} max={200} />+</h4>
+                  <h4><CounterItem min={0} max={30} />+</h4>
                   <span>Happy Clients</span>
                 </div>
               </div>

@@ -4,83 +4,101 @@
 /*  7.12 cta css start
 /*----------------------------------------*/
 
-.tp-cta{
-    &-title-box{
+.tp-cta {
+    &-title-box {
         padding-left: 70px;
-        @media #{$md,$xs}{
+
+        @media #{$md,$xs} {
             padding-left: 0;
         }
-        & p{
+
+        & p {
             max-width: 465px;
             margin: 0 auto;
             font-size: 17px;
             font-weight: 400;
             color: rgba(255, 255, 255, 0.70);
-            @media #{$md}{
+
+            @media #{$md} {
                 margin: 0;
                 margin-bottom: 30px;
                 display: inline-block;
             }
         }
     }
-    &-title{
+
+    &-title {
         font-size: 200px;
         font-weight: 400;
         line-height: 1;
         letter-spacing: -4px;
         color: var(--tp-common-white);
         font-family: var(--tp-ff-marcellus);
-        @media #{$lg,$md}{
+
+        @media #{$lg,$md} {
             font-size: 130px;
         }
-        @media #{$xs}{
+
+        @media #{$xs} {
             font-size: 80px;
         }
-        @media #{$sm}{
+
+        @media #{$sm} {
             font-size: 110px;
         }
-        & span{
+
+        & span {
             padding-left: 315px;
-            @media #{$md,$xs}{
+
+            @media #{$md,$xs} {
                 padding-left: 0;
             }
         }
     }
-    &-btn-box{
+
+    &-btn-box {
         position: absolute;
         bottom: 5%;
         left: 12%;
-        @media #{$lg}{
-            bottom: 16%;
-            left: 25%;
+
+        @media #{$lg} {
+            bottom: -16%;
+            left: 5%;
             transform: scale(.7);
         }
-        @media #{$md}{
+
+        @media #{$md} {
             position: static;
         }
-        @media #{$xs}{
+
+        @media #{$xs} {
             position: static;
             margin-top: 20px;
         }
     }
-    &-icon{
+
+    &-icon {
         position: absolute;
         top: 14%;
         right: 19%;
-        @media #{$lg}{
+
+        @media #{$lg} {
             top: 8%;
             right: 29%;
         }
-        @media #{$xs}{
+
+        @media #{$xs} {
             top: -21%;
         }
-        & img{
+
+        & img {
             animation: rotate2 5s linear infinite;
         }
     }
-    &-circle{
-        & span{
-            height: 400px; 
+
+    &-circle {
+        & span {
+            height: 400px;
             width: 400px;
             border-radius: 50%;
             background: linear-gradient(-90deg, rgba(3, 0, 30, 0.50) 0%, rgba(115, 3, 192, 0.50) 33.33%, rgba(236, 56, 188, 0.50) 66.67%, rgba(253, 239, 249, 0.50) 100%);
@@ -89,52 +107,63 @@
             position: absolute;
             top: 50%;
             left: 50%;
-            transform: translate(-50%,-50%);
+            transform: translate(-50%, -50%);
             z-index: -1;
         }
     }
 }
-.tp-studio-cta{
-    &-title-box{
-        @media #{$xs}{
+
+.tp-studio-cta {
+    &-title-box {
+        @media #{$xs} {
             margin-bottom: 30px;
         }
     }
-    &-title{
+
+    &-title {
         font-size: 220px;
         font-weight: 300;
         line-height: 1;
         color: var(--tp-common-black);
         font-family: var(--tp-ff-shoulders);
-        @media #{$xxl}{
+
+        @media #{$xxl} {
             font-size: 130px;
         }
-        @media #{$xl}{
+
+        @media #{$xl} {
             font-size: 140px;
         }
-        @media #{$lg}{
+
+        @media #{$lg} {
             font-size: 120px;
         }
-        @media #{$md}{
+
+        @media #{$md} {
             font-size: 110px;
         }
-        @media #{$xs}{
+
+        @media #{$xs} {
             font-size: 50px;
         }
-        @media #{$sm}{
+
+        @media #{$sm} {
             font-size: 70px;
         }
-        & span{
+
+        & span {
             font-weight: 700;
         }
     }
-    &-btn-box{
-        @media #{$xs}{
+
+    &-btn-box {
+        @media #{$xs} {
             margin-bottom: 30px;
         }
     }
-    &-subscribe-link{
-        & a{
+
+    &-subscribe-link {
+        & a {
             font-size: 36px;
             font-weight: 400;
             line-height: 1;
@@ -146,13 +175,16 @@
             background-position: 100% 100%, 0 100%;
             background-repeat: no-repeat;
             transition: background-size 0.3s linear;
-            @media #{$xs}{
+
+            @media #{$xs} {
                 font-size: 20px;
             }
-            & span{
+
+            & span {
                 margin-left: 10px;
             }
-            &:hover{
+
+            &:hover {
                 background-size: 0% 2px, 100% 2px;
             }
         }

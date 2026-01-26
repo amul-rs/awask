@@ -68,19 +68,19 @@ export default function ServiceSix() {
   return (
     <div className="sv-service-area project-panel-area-2">
       <div className="container-fluid p-0">
-        {service_data.map((item) => (
-          <div key={item.id} className="sv-service-item project-panel-2">
-            <div className="row g-0">
-              <div className="col-xl-6 col-lg-6">
+        {service_data.map((item, index) => (
+          <div key={item.id} className={`sv-service-item project-panel-2 ${index % 2 === 0 ? 'item-odd' : 'item-even'}`}>
+            <div className="row g-0 h-100">
+              <div className="col-xl-6 col-lg-6 h-100">
                 <div className="sv-service-thumb">
                   <Image
                     src={item.img}
                     alt="service-img"
-                    style={{ height: "auto" }}
+                    style={{ height: "100%", width: "100%", objectFit: "cover" }}
                   />
                 </div>
               </div>
-              <div className="col-xl-6 col-lg-6">
+              <div className="col-xl-6 col-lg-6 h-100">
                 <div className="sv-service-content-wrap d-flex align-items-center">
                   <div className="sv-service-content">
                     <div className="sv-service-title-box">
@@ -101,7 +101,7 @@ export default function ServiceSix() {
                           ))}
                         </ul>
                       </div>
-                      <div className="sv-service-btn">
+                      {/* <div className="sv-service-btn">
                         <Link
                           className="tp-btn-zikzak zikzak-inner p-relative"
                           href="/service-details"
@@ -112,7 +112,7 @@ export default function ServiceSix() {
                           </span>
                           <ShapeTwo />
                         </Link>
-                      </div>
+                      </div> */}
                     </div>
                   </div>
                 </div>
