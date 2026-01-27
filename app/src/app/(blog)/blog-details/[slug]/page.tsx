@@ -6,10 +6,10 @@ export async function generateMetadata({ params }: { params: { slug: string } })
   const blog = [...blog_data].find((blog) => blog.slug === params.slug);
   return {
     title: blog ? `${blog.title} | Awask Blog` : "Blog Details | Awask",
-    description: blog ? blog.content.find(c => c.type === 'paragraph')?.text?.substring(0, 160) : "Read the latest insights from Awask digital marketing experts.",
+    description: blog?.content ? blog.content.find(c => c.type === 'paragraph')?.text?.substring(0, 160) : "Read the latest insights from Awask digital marketing experts.",
     openGraph: {
       title: blog?.title,
-      description: blog ? blog.content.find(c => c.type === 'paragraph')?.text?.substring(0, 160) : "Digital marketing and technology insights.",
+      description: blog?.content ? blog.content.find(c => c.type === 'paragraph')?.text?.substring(0, 160) : "Digital marketing and technology insights.",
       images: [blog?.img?.src || ""],
     },
   };
