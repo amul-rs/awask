@@ -11,7 +11,11 @@ import details_thumb_1 from "@/assets/img/inner-blog/blog-details-without-sideba
 import details_thumb_2 from "@/assets/img/inner-blog/blog-details-without-sidebar/blog-details-2.jpg";
 import details_thumb_3 from "@/assets/img/inner-blog/blog-details/blog-details-4.jpg";
 
+import blog_data from "@/data/blog-data";
+
 export default function BlogDetailsAreaTwo() {
+  const blog = blog_data[0]; // Fallback to first blog for template page
+
   return (
     <section className="postbox__area tp-blog-sidebar-sticky-area pt-120 pb-120">
       <div className="container">
@@ -179,11 +183,12 @@ export default function BlogDetailsAreaTwo() {
                     </div>
                   </div>
                   {/* blog details author */}
-                  <BlogDetailsAuthor />
+                  <BlogDetailsAuthor blog={blog} />
                   {/* blog details author */}
 
                   {/* blog details navigation */}
                   <BlogDetailsNavigation />
+
                   {/* blog details navigation */}
                   <div className="postbox__comment mb-100">
                     <h3 className="postbox__comment-title">3 Comments</h3>
