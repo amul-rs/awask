@@ -17,12 +17,15 @@ import BlogDetailsRelatedPosts from "@/components/blog/details/blog-details-rela
 // animation
 import { charAnimation } from "@/utils/title-animation";
 
+import { blog_data } from "@/data/blog-data";
+
 // prop type
 type IProps = {
   blog: IBlogDT;
 };
 
 const BlogDetailsMain = ({ blog }: IProps) => {
+  const finalBlog = blog || blog_data[0];
   useScrollSmooth();
 
   useGSAP(() => {
@@ -42,11 +45,11 @@ const BlogDetailsMain = ({ blog }: IProps) => {
         <div id="smooth-content">
           <main>
             {/* blog details hero */}
-            <BlogDetailsBreadcrumb blog={blog} />
+            <BlogDetailsBreadcrumb blog={finalBlog} />
             {/* blog details hero */}
 
             {/* blog details area */}
-            <BlogDetailsArea blog={blog} />
+            <BlogDetailsArea blog={finalBlog} />
             {/* blog details area */}
 
             {/* related posts */}
