@@ -2,7 +2,6 @@ import React from "react";
 import Image from "next/image";
 import { ProjectShape, RightArrow } from "../svg";
 import cta from '@/assets/img/home-03/cta/cta-1.png';
-import Link from "next/link";
 
 export default function ContactOne() {
   return (
@@ -22,13 +21,24 @@ export default function ContactOne() {
               <Image src={cta} alt="cta-img" />
             </div>
             <div className="tp-cta-btn-box">
-              <Link className="tp-btn-zikzak p-relative" href="/contact">
+              <div
+                className="tp-btn-zikzak p-relative cursor-pointer"
+                onClick={() => {
+                  if (typeof window !== "undefined" && (window as any).Calendly) {
+                    (window as any).Calendly.initPopupWidget({
+                      url: "https://calendly.com/awask-official/30min",
+                    });
+                  }
+                }}
+                role="button"
+                tabIndex={0}
+              >
                 <span className="zikzak-content">
                   Get <br /> In Touch
                   <RightArrow clr="#19191A" />
                 </span>
                 <ProjectShape />
-              </Link>
+              </div>
             </div>
           </div>
         </div>
