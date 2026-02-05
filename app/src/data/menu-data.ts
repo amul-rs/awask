@@ -133,6 +133,11 @@ const menu_data: IMenuDT[] = [
       { title: 'Contact', link: '/contact' },
       { title: 'Get IN touch', link: '/contact-2' },
     ]
+  },
+  {
+    id: 6,
+    title: 'Get In Touch',
+    link: '#calendly',
   }
 ];
 
@@ -247,5 +252,11 @@ export const mobile_menu_data: {
         { title: 'Contact', link: '/contact' },
         { title: 'Get IN touch', link: '/contact-2' },
       ]
+    },
+    {
+      id: 6,
+      title: 'Get In Touch',
+      link: '#calendly',
+      dropdown_menus: []
     }
   ]

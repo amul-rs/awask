@@ -17,27 +17,48 @@ export default function MobileMenusTwo() {
     <nav className="tp-main-menu-content">
       <ul>
         {mobile_menu_data.map((menu) => (
-          <li key={menu.id} className="has-dropdown">
-            <a className="pointer">
-              {menu.title}
-              <button
-                className="dropdown-toggle-btn"
-                onClick={() => openMobileMenu(menu.title)}
-              >
-                <i className="fa-light fa-plus"></i>
-              </button>
-            </a>
-            <ul
-              className="tp-submenu submenu"
-              style={{ display: navTitle === menu.title ? "block" : "none" }}
+          <li key={menu.id} className={menu.dropdown_menus && menu.dropdown_menus.length > 0 ? "has-dropdown" : ""}>
+            <Link
+              href={menu.link}
+              className="pointer"
+              onClick={(e) => {
+                if (menu.link === '#calendly') {
+                  e.preventDefault();
+                  if (typeof window !== 'undefined' && (window as any).Calendly) {
+                    (window as any).Calendly.initPopupWidget({
+                      url: 'https://calendly.com/awask-official/30min'
+                    });
+                  }
+                }
+              }}
             >
-              {menu.dropdown_menus &&
-                menu.dropdown_menus.map((dm, i) => (
-                  <li key={i}>
-                    <Link href={dm.link}>{dm.title}</Link>
-                  </li>
-                ))}
-            </ul>
+              {menu.title}
+              {menu.dropdown_menus && menu.dropdown_menus.length > 0 && (
+                <button
+                  className="dropdown-toggle-btn"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    openMobileMenu(menu.title);
+                  }}
+                >
+                  <i className="fa-light fa-plus"></i>
+                </button>
+              )}
+            </Link>
+            {menu.dropdown_menus && menu.dropdown_menus.length > 0 && (
+              <ul
+                className="tp-submenu submenu"
+                style={{ display: navTitle === menu.title ? "block" : "none" }}
+              >
+                {menu.dropdown_menus &&
+                  menu.dropdown_menus.map((dm, i) => (
+                    <li key={i}>
+                      <Link href={dm.link}>{dm.title}</Link>
+                    </li>
+                  ))}
+              </ul>
+            )}
           </li>
         ))}
       </ul>

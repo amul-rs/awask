@@ -1,0 +1,52 @@
+@use '../utils' as *;
+
+.calendly-sticky-wrapper {
+    position: fixed;
+    right: 50px;
+    bottom: 110px;
+    z-index: 99;
+
+    @media #{$xs} {
+        right: 20px;
+        bottom: 80px;
+    }
+
+    .calendly-sticky-btn {
+        height: 44px;
+        line-height: 44px;
+        padding: 0 20px;
+        background: var(--tp-common-black);
+        color: var(--tp-common-white);
+        border-radius: 30px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0px 8px 16px rgba(3, 4, 28, 0.3);
+        @include transition(all, .3s);
+
+        span {
+            font-weight: 600;
+            font-family: var(--tp-ff-heading);
+            font-size: 14px;
+            white-space: nowrap;
+        }
+
+        &:hover {
+            background: var(--tp-common-yellow);
+            color: var(--tp-common-black);
+            @include transform(translateY(-4px));
+        }
+    }
+}
+
+// Ensure balance with back-to-top (already updated in back-to-top but let's be sure)
+.back-to-top-wrapper {
+    &.back-to-top-btn-show {
+        bottom: 50px;
+
+        @media #{$xs} {
+            bottom: 20px;
+        }
+    }
+}

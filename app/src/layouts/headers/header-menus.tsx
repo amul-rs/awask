@@ -3,13 +3,27 @@ import Image from "next/image";
 import Link from "next/link";
 import menu_data from "@/data/menu-data";
 
-const imgStyle:CSSProperties = { width: "100%", height: "auto", objectFit: "cover" };
+const imgStyle: CSSProperties = { width: "100%", height: "auto", objectFit: "cover" };
 const HeaderMenus = () => {
   return (
     <ul>
       {menu_data.map((menu) => (
-        <li key={menu.id} className="has-dropdown">
-          <Link href={menu.link}>{menu.title}</Link>
+        <li key={menu.id} className={menu.home_menus || menu.pages_mega_menu || menu.portfolio_mega_menus || menu.dropdown_menus ? "has-dropdown" : ""}>
+          <Link
+            href={menu.link}
+            onClick={(e) => {
+              if (menu.link === '#calendly') {
+                e.preventDefault();
+                if (typeof window !== 'undefined' && (window as any).Calendly) {
+                  (window as any).Calendly.initPopupWidget({
+                    url: 'https://calendly.com/awask-official/30min'
+                  });
+                }
+              }
+            }}
+          >
+            {menu.title}
+          </Link>
           {menu.home_menus ? (
             <div className="tp-submenu submenu tp-mega-menu">
               <div className="tp-menu-fullwidth">
@@ -20,8 +34,8 @@ const HeaderMenus = () => {
                         <div className="homemenu-thumb-wrap mb-20">
                           <div className="homemenu-thumb fix">
                             <Link href={home_menu.link}>
-                              <Image src={home_menu.img} alt="home-img" width={251} height={235} 
-                              style={imgStyle}/>
+                              <Image src={home_menu.img} alt="home-img" width={251} height={235}
+                                style={imgStyle} />
                             </Link>
                           </div>
                         </div>
@@ -51,7 +65,7 @@ const HeaderMenus = () => {
                             <div className="tp-megamenu-list-wrap">
                               <ul>
                                 {menu.pages_mega_menu.first.submenus.map(
-                                  (psm,i) => (
+                                  (psm, i) => (
                                     <li key={i}>
                                       <Link href={psm.link}>{psm.title}</Link>
                                     </li>
@@ -69,7 +83,7 @@ const HeaderMenus = () => {
                             <div className="tp-megamenu-list-wrap">
                               <ul>
                                 {menu.pages_mega_menu.second.submenus.map(
-                                  (psm,i) => (
+                                  (psm, i) => (
                                     <li key={i}>
                                       <Link href={psm.link}>{psm.title}</Link>
                                     </li>
